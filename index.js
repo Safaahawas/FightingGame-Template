@@ -5,3 +5,34 @@ canvas.width = 1024
 canvas.height = 576
 
 c.fillRect(0,0,canvas.width,canvas.height)
+
+class sprite{
+    constructor(position){
+      this.position = position)
+  }
+
+  draw(){
+    c.fillStyle = 'red'
+    c.fillRect(this.position.x, this.position.y, 50, 150)
+  }
+}
+
+const player = new sprite ({
+    x: 0,
+    y: 0,
+})
+player.draw()
+const enemy = new sprite({
+    x: 400,
+    y: 100,
+})
+enemy.draw()
+
+console.log(player)
+
+function animate(){
+    window.requestAnimationFrame(animate)
+console.log('go');
+
+}
+animate()
